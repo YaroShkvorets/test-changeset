@@ -46,7 +46,8 @@ jobs:
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v4
         with:
-          gpg_private_key: ${{ secrets.PINAX_BOT_PGP_PRIVATE_KEY }}
+          gpg_private_key: asdfasdfasdfasdf
+          # gpg_private_key: ${{ secrets.PINAX_BOT_PGP_PRIVATE_KEY }}
           passphrase: ${{ secrets.PINAX_BOT_PGP_PASSPHRASE }}
           git_config_global: true
           git_user_signingkey: true
