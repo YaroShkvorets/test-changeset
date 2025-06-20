@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/YaroShkvorets/test-changeset#readme",
   "dependencies": {
-    "@pinax/graph-networks-registry": "^0.6.0"
+    "@pinax/graph-networks-registry": "^0.6.7"
   }
 }
