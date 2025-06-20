@@ -11,4 +11,4 @@ jobs:
   dependencies:
     uses: ./.github/workflows/shared-changesets-dependencies.yml
     secrets:
-      githubToken: ${{ secrets.GITHUB_TOKEN }}
+      githubToken: ${{ secrets.PINAX_BOT_GITHUB_TOKEN }}
