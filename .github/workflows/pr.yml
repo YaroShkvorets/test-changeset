@@ -1,0 +1,13 @@
+name: Snapshot Release
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions: write-all
+
+jobs:
+  dependencies:
+    uses: ./.github/workflows/shared-changesets-dependencies.yml
+    secrets:
+      githubToken: ${{ secrets.GITHUB_TOKEN }}

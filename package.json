@@ -1,0 +1,22 @@
+{
+  "name": "test-changeset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaroShkvorets/test-changeset.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaroShkvorets/test-changeset/issues"
+  },
+  "homepage": "https://github.com/YaroShkvorets/test-changeset#readme",
+  "dependencies": {
+    "@pinax/graph-networks-registry": "^0.6.0"
+  }
+}
