@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.githubToken }}
 
       - name: Create/Update Changesets
-        uses: pinax-network/changesets-dependencies-action@v1.2.2
+        uses: pinax-network/changesets-dependencies-action@gpg
         with:
           preCommit: ${{ inputs.preCommit }}
         env:
