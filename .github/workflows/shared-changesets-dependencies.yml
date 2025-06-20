@@ -26,6 +26,10 @@ on:
     secrets:
       githubToken:
         required: true
+      gpg_private_key:
+        required: true
+      gpg_passphrase:
+        required: true
 
 jobs:
   changeset:

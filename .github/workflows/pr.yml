@@ -12,3 +12,6 @@ jobs:
     uses: ./.github/workflows/shared-changesets-dependencies.yml
     secrets:
       githubToken: ${{ secrets.PINAX_BOT_GITHUB_TOKEN }}
+      gpg_private_key: ${{ secrets.PINAX_BOT_PGP_PRIVATE_KEY }}
+      gpg_passphrase: ${{ secrets.PINAX_BOT_PGP_PASSPHRASE }}
+
