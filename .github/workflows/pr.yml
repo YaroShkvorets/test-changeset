@@ -1,13 +1,20 @@
-name: Snapshot Release
+name: PR
 on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 permissions: write-all
 
 jobs:
   dependencies:
     uses: ./.github/workflows/shared-changesets-dependencies.yml
+    with:
+      gitUserEmail: ops@pinax.network
+      gitUserName: pinax-bot
     secrets:
-      githubToken: ${{ secrets.GITHUB_TOKEN }}
+      githubToken: ${{ secrets.PINAX_BOT_GITHUB_TOKEN }}
+      PINAX_BOT_PGP_PRIVATE_KEY: ${{ secrets.PINAX_BOT_PGP_PRIVATE_KEY }}
+      PINAX_BOT_PGP_PASSPHRASE: ${{ secrets.PINAX_BOT_PGP_PASSPHRASE }}
+
