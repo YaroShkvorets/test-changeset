@@ -48,4 +48,4 @@ jobs:
           setupGitUser: false
           githubReleaseName: ${{ steps.vars.outputs.date }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PINAX_BOT_GITHUB_TOKEN }}
