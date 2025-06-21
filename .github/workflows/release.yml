@@ -39,7 +39,7 @@ jobs:
       - name: Release / pull_request
         uses: pinax-network/changesets-release-action@v1.5.2
         with:
-          version: npm changeset version
+          version: npm run changeset version
           commit: ${{ env.RELEASE_COMMIT_MSG }}
           title: Upcoming Release Changes
           createGithubReleases: true
