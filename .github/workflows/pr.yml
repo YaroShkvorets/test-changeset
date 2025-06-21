@@ -10,6 +10,9 @@ permissions: write-all
 jobs:
   dependencies:
     uses: ./.github/workflows/shared-changesets-dependencies.yml
+    with:
+      gitUserEmail: ops@pinax.network
+      gitUserName: pinax-bot
     secrets:
       githubToken: ${{ secrets.PINAX_BOT_GITHUB_TOKEN }}
       PINAX_BOT_PGP_PRIVATE_KEY: ${{ secrets.PINAX_BOT_PGP_PRIVATE_KEY }}
