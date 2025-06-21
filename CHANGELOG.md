@@ -1,5 +1,11 @@
 # test-changeset
 
+## 1.0.2
+
+### Patch Changes
+
+- [#11](https://github.com/YaroShkvorets/test-changeset/pull/11) [`9495e98`](https://github.com/YaroShkvorets/test-changeset/commit/9495e987b8e7031d73bf177f06eec39360ef98e1) Thanks [@YaroShkvorets](https://github.com/YaroShkvorets)! - sdf
+
 ## 1.0.1
 
 ### Patch Changes
