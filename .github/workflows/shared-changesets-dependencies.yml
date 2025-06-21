@@ -26,9 +26,9 @@ on:
     secrets:
       githubToken:
         required: true
-      gpg_private_key:
+      PINAX_BOT_PGP_PRIVATE_KEY:
         required: true
-      gpg_passphrase:
+      PINAX_BOT_PGP_PASSPHRASE:
         required: true
 
 jobs:
