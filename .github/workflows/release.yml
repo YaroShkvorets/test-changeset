@@ -36,6 +36,8 @@ jobs:
         run: |
           echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
           echo "date=$(date +"%B %d, %Y")" >> $GITHUB_OUTPUT
+      - name: Install dependencies
+        run: npm install
       - name: Release / pull_request
         uses: pinax-network/changesets-release-action@v1.5.2
         with:
